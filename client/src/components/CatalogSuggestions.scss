@@ -1,0 +1,6 @@
+@use '../styles/tokens' as *;
+.catalog-results { margin: 10px 0; }
+.catalog-result { padding: 12px 0; border-bottom: 1px solid $line; }
+.catalog-result__name { color: $ink; font-size: 14px; margin: 4px 0; }
+.catalog-reference { padding: 12px 0; }
+.item__details > .catalog-reference { padding: 12px 16px; border-bottom: 1px solid $line; }

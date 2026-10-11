@@ -1,0 +1,10 @@
+Use case: logo-brand.
+Asset type: a polished square app icon for Xiaoman, a Chinese baby supplies inventory mini-program.
+Primary request: create a beautiful, distinctive premium brand emblem, more refined and expressive than a plain line icon, while keeping an extremely restrained cool-neutral style.
+Subject: a single cohesive sculptural emblem of a small rounded baby-supplies basket, holding one instantly recognizable baby feeding bottle and one softly folded diaper. The basket rim curves upward into a gentle embracing arc, suggesting attentive care and keeping little essentials ready. Integrate the forms into one clear silhouette, not a collage or a realistic product photograph.
+Style: elegant matte ceramic / soft sculpted 3D illustration with carefully balanced geometry, delicate bevels, refined material shading and a very subtle contact shadow. Richer craftsmanship, but not busy, childish or toy-like.
+Composition: centered single emblem occupying about 72 percent of the square, ample clean white negative space, strong readability at 48px, shallow three-quarter view. Pure white opaque full-bleed square background, no outer rounded-square tile or fake app mockup.
+Palette: porcelain white, cool silver-gray, dusty slate blue and a small charcoal accent. The bottle cap and embracing basket arc provide muted blue-gray contrast.
+Lighting: soft cool studio light, smooth clean edges, dimensional but calm and understated.
+Text: none.
+Avoid: green, mint, teal, warm beige, pink, orange, gold, words, Chinese characters, letters, numbers, watermarks, brand labels, photorealistic packaging, excessive tiny details, multiple icon alternatives, flat stick-figure drawing, generic heart logo, thick black outlines, neon or glossy plastic.

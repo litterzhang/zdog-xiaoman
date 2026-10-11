@@ -1,0 +1,11 @@
+Use case: logo-brand.
+Asset type: a single square app icon for Xiaoman, a WeChat-oriented baby supplies organizer.
+Primary request: create one original, extremely minimal mark of a baby gently wrapped in a swaddle, expressing quiet care and everyday organization.
+Scene/backdrop: a perfectly flat pure white (#FFFFFF) square canvas, edge to edge.
+Subject: a simple circular baby head nested in a clean rounded swaddle silhouette, formed by just a few deliberate smooth curves. Abstract and immediately legible, not a detailed baby illustration.
+Style/medium: crisp flat graphic design with a vector-like finish; elegant contemporary minimalism, cool and restrained rather than cute or decorative. Consistent substantial rounded strokes, smooth clean edges, no hairline details. One coherent symbol, not several separate icons.
+Composition/framing: exactly one centered mark; balanced negative space; the mark occupies approximately 60% of the canvas width and 68% of its height. Comfortable padding on every side so the mark also works within a circular crop. Recognizable at 32 pixels.
+Color palette: only pure white and cool slate blue-gray (#667B91), with dark cool charcoal (#303844) permitted if contrast needs it. No green and no warm colors.
+Text: none. No letters, numbers, Chinese characters, wordmark, captions, or signature.
+Constraints: one finished icon only, square 1:1, solid white background, opaque raster output. Do not draw a rounded-square app tile inside the canvas; the platform supplies its own crop. Keep the composition clean and calm.
+Avoid: gradients, shadows, 3D effects, glossy surfaces, texture, grain, photography, mockups, grids of alternatives, decorative frames, extra props, animals, hearts, stars, plants, a crescent moon, flowers, pink, orange, yellow, beige, green, teal, watermarks, and brand imitations.

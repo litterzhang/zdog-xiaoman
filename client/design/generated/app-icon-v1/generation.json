@@ -1,0 +1,38 @@
+{
+  "generatedOn": "2026-10-05",
+  "mode": "user-requested-xdog-native-cli",
+  "provider": "antigravity",
+  "model": "antigravity/gemini-3.1-flash-image",
+  "source": "client/design/generated/app-icon-v1/image-c7fa541c0a3f4b8f9ba1e00ff27f123d-1.jpg",
+  "sourceSha256": "aedcc3a89fb42c36b969d964758270491a0f98b7087ce678f63be538d139aa29",
+  "prompt": "client/design/generated/app-icon-v1/prompt.txt",
+  "aspectRatio": "1:1",
+  "requestedImageSize": "1K",
+  "proxyEnabled": true,
+  "usage": {
+    "input": 286,
+    "output": 1477,
+    "cacheRead": 0,
+    "cacheWrite": 0,
+    "totalTokens": 1763
+  },
+  "postprocessing": "JPEG to opaque RGB PNG; 512px export uses Pillow LANCZOS. No drawing, recoloring, or retouching.",
+  "postprocessingEnvironment": "uv run --project server --no-sync --offline --with pillow",
+  "pillowVersion": "12.3.0",
+  "exports": [
+    {
+      "path": "client/src/assets/brand/app-icon-master-v1.png",
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "sha256": "55c09db297023a320cfa674740558e36f53912e8e0ce91d0256ff5347d939335"
+    },
+    {
+      "path": "client/src/assets/brand/app-icon-v1.png",
+      "width": 512,
+      "height": 512,
+      "format": "PNG",
+      "sha256": "d691ea51804f4ec231c390943c9ace529fce863d2d98928e4dcda347cf187320"
+    }
+  ]
+}

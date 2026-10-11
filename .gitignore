@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+.env
+.env.local
+.secrets/
+.data/
+*.log
+
+# Credentials, private environments, and runtime data.
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.sqlite*
+*.db
+*.db-shm
+*.db-wal
+coverage/

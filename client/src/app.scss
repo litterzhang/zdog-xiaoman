@@ -1,0 +1,69 @@
+@use './styles/tokens' as *;
+
+page, body { background: $surface; color: $ink; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 1.6; }
+view, text, button, input, textarea, taro-view-core, taro-text-core, taro-button-core { box-sizing: border-box; }
+button { margin: 0; font-family: inherit; border: 0; }
+button::after { border: 0; }
+.page taro-button-core { margin: 0; font-family: inherit; }
+.page taro-button-core + taro-button-core { margin-top: 0; }
+.page taro-button-core::after { border: 0; }
+.page { background: $surface; width: 100%; max-width: 520PX; min-height: 100%; margin: 0 auto; padding: 10px 10px 20px; padding-bottom: calc(20px + env(safe-area-inset-bottom)); overflow-wrap: anywhere; }
+.card { width: 100%; padding: 16px; margin-bottom: 10px; border-radius: $radius; background: $paper; overflow: hidden; }
+.card--flush { padding: 0; }
+.card--welcome { text-align: center; padding: 22px 16px; }
+.welcome-title { display: block; font-size: 18px; font-weight: 400; color: #333; }
+.welcome-desc { display: block; color: $muted; font-size: 12px; margin-top: 8px; }
+.block { display: block; }
+.row { display: flex; align-items: center; gap: 10px; }
+.between { justify-content: space-between; }
+.grow { flex: 1; min-width: 0; }
+.muted { color: $muted; }
+.small { font-size: 12px; }
+.section-title { font-size: 14px; font-weight: 400; color: #333; }
+.card-label { padding: 12px 16px; border-bottom: 1px solid $line; }
+.page .button { background: $ink; color: $paper; width: 100%; min-height: 44px; padding: 10px 14px; font-size: 14px; line-height: 24px; border-radius: $radius; font-weight: 400; }
+.page .button--secondary { color: $ink; border: 1px solid $line; background: $paper; }
+.page .button[disabled]:not([disabled='false']) { background: #eeeeee; color: #999; }
+.page .button--secondary[disabled]:not([disabled='false']) { background: $surface; color: $muted; }
+.button + .button { margin-top: 10px; }
+.page .text-button { width: auto; flex-shrink: 0; color: $accent; background: transparent; padding: 8px 0; min-height: 40px; font-size: 12px; line-height: 24px; text-align: left; border-radius: 0; white-space: normal; }
+.text-button--center { width: 100%; text-align: center; }
+.page .menu-row { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 48px; padding: 12px 16px; background: $paper; color: $ink; border-bottom: 1px solid $line; border-radius: 0; text-align: left; font-size: 14px; line-height: 24px; white-space: normal; }
+.menu-row:last-child { border-bottom: 0; }
+.menu-arrow { color: #ccc; font-size: 18px; margin-left: 12px; }
+.error { display: block; padding: 10px 12px; border-left: 2px solid $accent; background: $surface; color: $ink; font-size: 12px; margin: 12px 0; }
+.notice { display: block; padding: 10px 12px; font-size: 12px; color: $muted; background: $surface; border-radius: 4px; }
+.demo { display: block; margin: 0 0 10px; color: $muted; font-size: 11px; text-align: center; }
+.empty { padding: 24px 16px; text-align: center; }
+.empty__title { display: block; font-size: 14px; font-weight: 400; }
+.empty__body { display: block; color: $muted; font-size: 12px; margin: 8px 0 10px; }
+.field { padding: 12px 0; border-bottom: 1px solid $line; }
+.field:last-child { border-bottom: 0; }
+.field__label { display: block; font-size: 12px; color: $muted; margin-bottom: 6px; }
+.field__input { width: 100%; background: transparent; padding: 4px 0; min-height: 36px; font-size: 14px; color: $ink; }
+.field__textarea { width: 100%; height: 80px; border: 0; border-radius: 4px; padding: 10px; font-size: 14px; background: $surface; color: $ink; }
+.field__date { min-height: 40px; padding: 8px 0; font-size: 14px; }
+.field__clear { min-width: 40px; text-align: right; }
+.pair { display: flex; gap: 16px; }
+.pair > .field { width: 0; flex: 1; }
+.segment { display: flex; gap: 16px; }
+.page .segment__button { width: auto; background: transparent; color: $muted; font-size: 13px; padding: 8px 0; min-height: 40px; line-height: 24px; border-radius: 0; border-bottom: 1px solid transparent; margin: 0; flex: 1; }
+.page .segment__button--active { color: $ink; border-bottom-color: $ink; }
+.footer-note { display: block; margin: 12px 0; font-size: 11px; color: $muted; text-align: center; }
+.actions { margin-top: 16px; }
+.page .item-row { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 64px; padding: 12px 16px; border-bottom: 1px solid $line; background: $paper; text-align: left; line-height: 1.6; border-radius: 0; color: $ink; }
+.item-row:last-child { border-bottom: 0; }
+.item-row__icon { width: 28px; height: 28px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.item-row__image { width: 24px; height: 24px; }
+.item-row__name { display: block; font-size: 14px; font-weight: 400; }
+.item-row__meta { display: block; color: $muted; font-size: 11px; margin-top: 3px; }
+.item-row__number { display: block; font-size: 18px; font-weight: 400; line-height: 1.4; text-align: right; }
+.item-row__unit { display: block; font-size: 11px; color: $muted; text-align: right; }
+.item-row__arrow { color: #ccc; font-size: 18px; }
+// Keep the H5 picker controls neutral; native WeChat pickers retain platform chrome.
+body .weui-picker__action { color: $accent; }
+body .weui-picker__action:first-child { color: $muted; }
+
+.usage__correction-actions, .shopping__actions { flex-wrap: wrap; gap: 0 16px; }
+.shopping__entry { padding: 12px 16px; border-bottom: 1px solid $line; }
+.shopping__entry:last-child { border-bottom: 0; }

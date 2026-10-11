@@ -1,0 +1,18 @@
+[Unit]
+Description=Xiaoman Flask API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=zhang
+Group=zhang
+WorkingDirectory=/home/zhang/workspace/zdog-xiaoman/server
+# The application loads server/.env as zhang; systemd need not read private home files.
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/bash -c "exec /home/zhang/workspace/zdog-xiaoman/server/.venv/bin/baby-server"
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

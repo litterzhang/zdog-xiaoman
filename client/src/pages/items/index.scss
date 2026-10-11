@@ -1,0 +1,4 @@
+@use '../../styles/tokens' as *;
+.items__search { width: 0; border-bottom: 1px solid $line; }
+.items__filters { flex-wrap: wrap; gap: 0 18px; margin-top: 8px; }
+.items__filters .segment__button { flex: none; }

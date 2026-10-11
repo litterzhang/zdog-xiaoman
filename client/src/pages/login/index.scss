@@ -1,0 +1,2 @@
+@use '../../styles/tokens' as *;
+.login__consent { display: flex; align-items: center; min-height: 44px; font-size: 11px; color: $muted; margin-top: 10px; }

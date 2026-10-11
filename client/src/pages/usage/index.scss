@@ -1,0 +1,5 @@
+@use '../../styles/tokens' as *;
+.usage__row { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid $line; }
+.usage__row:last-child { border-bottom: 0; }
+.usage__submit { padding: 16px; }
+.usage__submit .button { margin-top: 12px; }

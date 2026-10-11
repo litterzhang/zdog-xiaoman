@@ -1,0 +1,59 @@
+@use '../styles/tokens' as *;
+
+.dialog-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background: rgba(30, 40, 52, .28);
+  animation: dialog-fade .18s ease-out both;
+}
+.dialog {
+  width: 100%;
+  max-width: 340PX;
+  padding: 26px 24px 22px;
+  border: 1px solid rgba(255, 255, 255, .8);
+  border-radius: 22px;
+  background: $paper;
+  box-shadow: 0 18px 64px rgba(30, 40, 52, .12);
+  text-align: center;
+  animation: dialog-arrive .22s ease-out both;
+}
+.dialog__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 16px;
+  border: 1px solid #e3e9ef;
+  border-radius: 12px;
+  background: #f3f6f9;
+  color: $accent;
+  font-size: 30px;
+  line-height: 1;
+}
+.dialog__mark--destructive { font-size: 18px; }
+.dialog__title { display: block; color: $ink; font-size: 18px; font-weight: 500; line-height: 1.5; }
+.dialog__body { max-height: 32vh; margin-top: 12px; text-align: left; }
+.dialog__copy { color: #7c8490; font-size: 13px; line-height: 1.85; white-space: pre-wrap; }
+.dialog__actions { display: flex; gap: 10px; margin-top: 24px; }
+.page .dialog__button {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 11px 8px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.page .dialog__button--cancel { background: #f2f4f6; color: #737d88; }
+.page .dialog__button--confirm { background: #667b91; color: $paper; }
+.dialog__note { display: block; margin-top: 14px; color: #9ba2ab; font-size: 10px; }
+@keyframes dialog-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes dialog-arrive { from { opacity: 0; transform: translateY(10px) scale(.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media (prefers-reduced-motion: reduce) { .dialog-layer, .dialog { animation: none; } }
